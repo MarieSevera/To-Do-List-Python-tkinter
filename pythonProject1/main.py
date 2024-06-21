@@ -1,5 +1,6 @@
 from tkinter import *
 import customtkinter
+from def_save import save_button
 
 #main window
 window = customtkinter.CTk()
@@ -86,7 +87,7 @@ button_2 = customtkinter.CTkButton(button_frame, text='Clear list', width=130, f
 button_2.grid(row=1, column=0, padx=2, pady=5)
 button_3 = customtkinter.CTkButton(button_frame, text='Save list', width=130, font=(main_font, 15), command=save_list)
 button_3.grid(row=0, column=0, padx=2, pady=5)
-button_4 = customtkinter.CTkButton(button_frame, text='Quit', width=130, font=(main_font, 15), command=window.destroy)
+button_4 = customtkinter.CTkButton(button_frame, text='Quit', width=130, font=(main_font, 15), command=save_button)
 button_4.grid(row=1, column=1, padx=2, pady=5)
 
 open_list()
